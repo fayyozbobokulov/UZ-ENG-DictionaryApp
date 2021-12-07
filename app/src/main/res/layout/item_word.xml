@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_3dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="@dimen/_10dp"
+        tools:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/bg_favourites"
+            android:clickable="true"
+            android:focusable="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:checked="true" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_word"
+            style="@style/TextMedium"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_8dp"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/text_translate"
+            app:layout_constraintEnd_toStartOf="@id/btn_more"
+            app:layout_constraintStart_toEndOf="@id/btn_save"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="RtlHardcoded"
+            tools:text="The articles in English are the definite article the and the indefinite articles a and an." />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_translate"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_save"
+            app:layout_constraintTop_toBottomOf="@id/text_word"
+            tools:text="Артикли на английском языке - это определенный артикль the и неопределенные артикли a и an." />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_date"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_translate"
+            tools:text="01.01.2022 15:00" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

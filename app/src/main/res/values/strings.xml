@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DictionaryApp</string>
+    <string name="main">Words</string>
+    <string name="addWord">Add word</string>
+    <string name="savedWords">Saved words</string>
+    <string name="search_dialog">Search</string>
+    <string name="word">Word</string>
+    <string name="translation">Translation or Meaning</string>
+    <string name="lang">Language</string>
+    <string name="add_to_fav">Add to favourites</string>
+    <string name="notufy_at">Notify at:</string>
+    <string name="none">None</string>
+    <string name="edit">Edit Word</string>
+    <string name="delete">Delete Word</string>
+    <string name="word_info">Word Details</string>
+    <string name="there_are_no_words">There are no words!</string>
+    <string name="en">EN</string>
+    <string name="uz">UZ</string>
+
+    <string-array name="langs">
+        <item>English</item>
+        <item>Uzbek</item>
+    </string-array>
+</resources>

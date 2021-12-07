@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@drawable/ic_faworites_defoult_grey" android:left="@dimen/_10dp" android:right="@dimen/_10dp" />
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/ic_faworites_active" android:left="@dimen/_10dp" android:right="@dimen/_10dp" />
+        </layer-list>
+    </item>
+
+</selector>

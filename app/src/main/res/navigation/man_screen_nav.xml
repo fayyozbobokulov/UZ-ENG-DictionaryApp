@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/man_screen_nav.xml"
+    app:startDestination="@id/wordsScreen">
+
+    <fragment
+        android:id="@+id/wordsScreen"
+        android:name="com.example.dictionaryapp.presentation.ui.screens.main.words.WordsScreen"
+        android:label="@string/main"
+        tools:layout="@layout/screen_words" />
+    <fragment
+        android:id="@+id/addWordScreen"
+        android:name="com.example.dictionaryapp.presentation.ui.screens.main.add_word.AddWordScreen"
+        android:label="@string/addWord"
+        tools:layout="@layout/screen_add_word" />
+    <fragment
+        android:id="@+id/savedWordsScreen"
+        android:name="com.example.dictionaryapp.presentation.ui.screens.main.saved.SavedWordsScreen"
+        android:label="@string/savedWords"
+        tools:layout="@layout/screen_saved_words" />
+</navigation>
